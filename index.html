@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form Template</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Survey Form</h1>
+      <p id="description">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo rerum
+        iure, beatae cumque, dolor ut adipisci necessitatibus dolores obcaecati
+        sed exercitationem ipsa laborum quasi fugit sapiente deserunt ad autem
+        saepe, aliquid veniam ea. At nulla a voluptas consequatur vel nemo
+        deserunt perferendis vero nesciunt perspiciatis, porro libero provident
+        voluptatem ipsa.
+      </p>
+    </header>
+
+    <main>
+      <form id="survey-form">
+        <!-- Name box -->
+        <div class="form-element">
+          <label for="name" id="name-label">Name:</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter name here"
+            required
+          />
+          <br />
+        </div>
+
+        <!-- Email Box -->
+        <div class="form-element">
+          <label for="email" id="email-label">Email:</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter email here"
+            required
+          /><br />
+        </div>
+
+        <!-- Age Box -->
+        <div class="form-element">
+          <label for="age" id="number-label">Age:</label>
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="5"
+            max="120"
+            placeholder="Age"
+          />
+        </div>
+
+        <!-- Employment Dropdown -->
+        <div class="form-element">
+          <select id="dropdown" name="status" required>
+            <option disabled selected value>Select employment status</option>
+            <option value="full-time">Employed full-time</option>
+            <option value="part-time">Employed part-time</option>
+            <option value="student">Student</option>
+            <option value="other">Other</option>
+            <option value="preferNo">Prefer not to say</option>
+          </select>
+        </div>
+
+        <!-- Languages Learned Checkboxes -->
+        <div class="form-element">
+          <fieldset class="fieldset">
+            <legend>Languages I have learned:</legend>
+            <input type="checkbox" name="html" id="html" value="learned" />
+            <label for="html">HTML</label><br />
+            <input type="checkbox" name="css" id="css" value="learned" />
+            <label for="css">CSS</label><br />
+            <input type="checkbox" name="js" id="js" value="learned" />
+            <label for="js">Javascript</label><br />
+          </fieldset>
+        </div>
+
+        <!-- Language Preference Radio Box -->
+        <div class="form-element">
+          <fieldset class="fieldset">
+            <legend>Favorite web developing language</legend>
+            <input type="radio" id="html" name="language" />
+            <label for="html">HTML</label><br />
+            <input type="radio" id="css" name="language" />
+            <label for="css">CSS</label><br />
+            <input type="radio" id="js" name="language" />
+            <label for="js">Javascript</label>
+          </fieldset>
+        </div>
+
+        <!-- Textbox for comments -->
+        <div class="form-element">
+          <label for="comments">Any comments or concerns?</label><br />
+          <textarea
+            name="comments"
+            id="comments"
+            cols="30"
+            rows="10"
+          ></textarea>
+        </div>
+
+        <!-- Submit button -->
+        <div class="form-element">
+          <button id="submit" type="button">Submit</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
