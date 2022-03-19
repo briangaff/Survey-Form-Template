@@ -3,7 +3,7 @@
   --accent-color: #5c0477;
   --primary-color: #ffc188;
   --bg-color: #11b3a5;
-  --bg-color-dark: #0e8a7f;
+  --bg-color-dark: #04312d;
 
   /* Fonts */
   --r-slab: "Roboto Slab", serif;
@@ -17,6 +17,7 @@ h1 {
 p {
   background-color: var(--bg-color-dark);
   padding: 1rem;
+  color: white;
 }
 body {
   margin: 0;
